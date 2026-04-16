@@ -1,0 +1,337 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <script src="js/jquery-4.0.0.min.js"></script>
+    <script src="js/social.js"></script>
+    <script src="js/nav.js"></script>
+    <script src="js/con01_scroll.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.15/dist/gsap.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.14.1/dist/ScrollTrigger.min.js"></script>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+      integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="css/social.css" />
+    <link rel="stylesheet" href="css/size-m.css" />
+    <link rel="stylesheet" href="css/size-s.css" />
+  </head>
+  <body>
+    <header>
+      <div class="logo">
+        <div class="logo-img">
+          <img src="img/logo-s.png" class="not" />
+          <img src="img/logo-w.png" class="scroll" />
+        </div>
+        <h1 class="logo-txt">
+          <span class="not">시노테 CENOTE</span
+          ><span class="scroll"> CENOTE</span>
+        </h1>
+      </div>
+      <nav>
+        <ul>
+          <li class="icon"><i class="fa-solid fa-xmark"></i></li>
+          <li><a href="#">후원</a></li>
+          <li><a href="#">공헌</a></li>
+          <li><a href="#">경영</a></li>
+          <li><a href="#">소개</a></li>
+          <li><a href="#">소식</a></li>
+        </ul>
+      </nav>
+      <div class="end">
+        <ul class="top">
+          <li class="log-in"><a href="#">로그인</a></li>
+          <li class="join"><a href="#">회원가입</a></li>
+          <li class="page"><a href="#">마이페이지</a></li>
+        </ul>
+        <div class="bottom">
+          <a class="not" href="#">
+            <img src="img/header-ENG.png" />
+          </a>
+          <div class="box">
+            <a href="#">후원하기</a>
+            <a class="menu" href="#"
+              ><i class="fa-solid fa-bars-staggered"></i
+            ></a>
+          </div>
+        </div>
+      </div>
+    </header>
+    <div id="visual">
+      <ul class="bg-wrap">
+        <li class="bg1">
+          <p>아동과 함께, 아동을 위한 변화를 만들어 갑니다.</p>
+          <div>
+            <a href="#">더보기 <i class="fa-solid fa-arrow-right-long"></i> </a>
+          </div>
+        </li>
+        <li class="bg2">
+          <p>모든 법률 규정을 준수하고 정보를 투명하게 공개합니다.</p>
+          <div>
+            <a href="#">더보기 <i class="fa-solid fa-arrow-right-long"></i> </a>
+          </div>
+        </li>
+        <li class="bg3">
+          <p>소중한 후원금 사용 내용을 투명하게 공개합니다.</p>
+          <div>
+            <a href="#">더보기 <i class="fa-solid fa-arrow-right-long"></i></a>
+          </div>
+        </li>
+      </ul>
+      <ul class="arrow-wrap">
+        <li class="prev">
+          <i class="fa-solid fa-angle-left"></i>
+        </li>
+        <li class="next">
+          <i class="fa-solid fa-angle-right"></i>
+        </li>
+      </ul>
+
+      <ul class="agency-wrap">
+        <li class="agency">
+          <div class="item">
+            <div class="icon">
+              <img src="img/agency-2.png" />
+            </div>
+            <div class="txt">
+              글로벌 4대 회계법인인
+              <br />한영회계법인을 통한 외부감사 등 <br />철저한 내외부 감사
+              실시
+            </div>
+          </div>
+        </li>
+        <li class="agency">
+          <div class="item">
+            <div class="icon">
+              <img src="img/agency-3.png" />
+            </div>
+            <div class="txt">
+              NGO의 투명성과 경영성과를
+              <br />객관적으로 평가해 수여하는 <br />삼일투명경영대상 수상
+            </div>
+          </div>
+        </li>
+        <li class="agency">
+          <div class="item">
+            <div class="icon">
+              <img src="img/agency-4.png" />
+            </div>
+            <div class="txt">
+              기후변화대응사업 수행 역량을
+              <br />인증받은 녹색 기후기금(GCF)의 <br />공식 인증기관
+            </div>
+          </div>
+        </li>
+      </ul>
+    </div>
+    <div id="container">
+      <section class="con01">
+        <div class="txt01">
+          <h2>
+            자연과 사람이 조화를 이루는 미래,<br />
+            우리의 지구를 지키기 위한 캠페인에 함께 해주세요
+          </h2>
+          <p>
+            시노테는 사람과 자연이 조화로운 미래를 만들어가기 위해 <br />다음
+            영역에 걸쳐 활동 하고 있습니다.
+          </p>
+        </div>
+        <div>
+          <ul class="bg-wrap">
+            <li class="bg1">
+              <div class="text-wrap">
+                <div class="sharp-wrap">
+                  <h3>#CLIMATE</h3>
+                  <h3 class="sharp sharp1">#CLIMATE</h3>
+                </div>
+                <p>건강한 기후와 <br />깨끗한 에너지</p>
+              </div>
+            </li>
+            <li class="bg2">
+              <div class="text-wrap">
+                <div class="sharp-wrap">
+                  <h3>#WILDLIFE</h3>
+                  <h3 class="sharp sharp2">#WILDLIFE</h3>
+                </div>
+                <p>
+                  깨끗한 공기와 물<br />
+                  비옥한 토양, 안정된 기후
+                </p>
+              </div>
+            </li>
+            <li class="bg3">
+              <div class="text-wrap">
+                <div class="sharp-wrap">
+                  <h3>#NATURE</h3>
+                  <h3 class="sharp sharp3">#NATURE</h3>
+                </div>
+                <p>탐조, 교육, 봉사활동을 <br />아우르는 경험</p>
+              </div>
+            </li>
+            <li class="bg4">
+              <div class="text-wrap">
+                <div class="sharp-wrap">
+                  <h3>#PLASTIC</h3>
+                  <h3 class="sharp sharp4">#PLASTIC</h3>
+                </div>
+                <p>플라스틱 문제 해결이<br />건강과 삷의 질을 지키는 길</p>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </section>
+      <section class="con02">
+        <div class="txt">
+          <h2>당신의 손길이 필요한 지금</h2>
+          <div class="bar">
+            <div class="bar1"></div>
+            <div class="bar2"></div>
+          </div>
+        </div>
+        <ul class="support">
+          <li>
+            <div class="green"><img src="img/con02-icon1" alt="" /></div>
+            <div class="white">
+              <img src="img/con02-icon1-white.png" alt="" />
+            </div>
+            <h3>정기후원</h3>
+          </li>
+          <li>
+            <div class="green"><img src="img/con02-icon2" alt="" /></div>
+            <div class="white">
+              <img src="img/con02-icon2-white.png" alt="" />
+            </div>
+            <h3>일시후원</h3>
+          </li>
+          <li>
+            <div class="green"><img src="img/con02-icon3" alt="" /></div>
+            <div class="white">
+              <img src="img/con02-icon3-white.png" alt="" />
+            </div>
+            <h3>결연후원</h3>
+          </li>
+          <li>
+            <div class="green"><img src="img/con02-icon4" alt="" /></div>
+            <div class="white">
+              <img src="img/con02-icon4-white.png" alt="" />
+            </div>
+            <h3>캠페인후원</h3>
+          </li>
+        </ul>
+      </section>
+      <section class="con03">
+        <div class="bg-wrap">
+          <ul>
+            <li class="bg1"></li>
+            <li class="bg2"></li>
+            <li class="bg3"></li>
+            <li class="bg4"></li>
+            <li class="bg5"></li>
+          </ul>
+        </div>
+        <div class="txt">
+          <ul>
+            <li>
+              <p>Support Inquiry</p>
+              <div class="qna">
+                <a href="#">후원문의</a>
+                <a href="#"><i class="fa-solid fa-chevron-right"></i></a>
+              </div>
+            </li>
+            <li>
+              <h2>당신의 따뜻한 손길이 <br />긴급한 도움이 필요한 순간</h2>
+            </li>
+          </ul>
+          <ul>
+            <li>
+              <p>ETC Inquiry</p>
+              <div class="qna">
+                <a href="#">기타문의</a>
+                <a href="#"><i class="fa-solid fa-chevron-right"></i></a>
+              </div>
+            </li>
+            <li>
+              <h2>후원자를 위한<br />기타 문의 및 공지사항</h2>
+            </li>
+          </ul>
+        </div>
+      </section>
+    </div>
+    <footer>
+      <div class="left">
+        <ul class="top">
+          <li><a href="#">시노테소개</a></li>
+          <li><a href="#">오시는길</a></li>
+          <li class="bold"><a href="#">개인정보처리방침</a></li>
+          <li><a href="#">이용약관</a></li>
+          <li><a href="#">이메일주소무단수집거부</a></li>
+        </ul>
+        <div class="center">
+          <p>
+            시노테 사회적협동조합 | 사업자등록번호:123-45-67890 | 대표자:김혜인
+          </p>
+          <p>(우)12345 서울특별시 마포구 | 대표번호:02-1234-5678</p>
+          <p>
+            후원자 전용 번호:1234-5678 | 팩스:02-1234-5678 |
+            이메일:hyeinkim@cenote.org
+          </p>
+        </div>
+        <div class="copy">COPYRIGHT ⓒCENOTE ALL RIGHT RESERVED.</div>
+      </div>
+      <div class="right">
+        <p>후원계좌번호</p>
+        <div class="account"><a href="#">후원계좌 안내</a></div>
+        <ul class="icon">
+          <li><img src="img/footer__icon1.png" /></li>
+          <li><img src="img/footer__icon2.png" /></li>
+          <li><img src="img/footer__icon3.png" /></li>
+          <li><img src="img/footer__icon4.png" /></li>
+          <li><img src="img/footer__icon5.png" /></li>
+        </ul>
+        <div class="family-site">
+          <div class="box">
+            <a href="#">Family site</a>
+            <i class="fa-solid fa-chevron-down"></i>
+          </div>
+          <ul class="slide">
+            <li><a href="#">시노테펀딩</a></li>
+            <li><a href="#">시노테스토어</a></li>
+            <li><a href="#">함께하는별</a></li>
+          </ul>
+        </div>
+      </div>
+    </footer>
+    <script>
+      // con02 스크롤내렸을때 li 하나씩 올라오게 함
+      gsap.to(".con02", {
+        y: 0,
+        duration: 0.5,
+      });
+      gsap.to(".con02 ul li", {
+        y: -100,
+        stagger: 0.2,
+        scrollTrigger: {
+          trigger: ".con02",
+          start: "top center",
+        },
+      });
+
+      // con03 스크롤했을때  con03전체가 올라오게 함
+      gsap.to(".con03", {
+        y: -200,
+        opacity: 1,
+        delay: 1,
+        scrollTrigger: {
+          trigger: ".con03",
+          start: "top 100%",
+          // end: "bottom 0%",
+        },
+      });
+    </script>
+  </body>
+</html>
