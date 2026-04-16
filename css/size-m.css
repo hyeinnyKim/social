@@ -48,6 +48,9 @@
   }
 
   /* header nav */
+  header nav {
+    display: none;
+  }
   header nav ul {
     color: #fff;
     width: 30%;
@@ -64,14 +67,11 @@
     flex-direction: column;
     gap: 2rem;
     padding-top: 3rem;
-    /* display: none; */
-    opacity: 0;
   }
   header nav ul li.icon {
     position: absolute;
     top: 0;
     right: 2rem;
-    opacity: 0;
   }
 
   /* header end */
