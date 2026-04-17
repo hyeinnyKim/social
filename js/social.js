@@ -1,25 +1,14 @@
 $(function win() {
   let w = $(window).width();
   console.log(w);
-  if (w <= 500) {
-    // $("#visual .agency .item").on("mouseenter",function(){
-    //   $(this).stop().animate({"width":"35%"});
-    //    $(this).find(".txt").stop().animate({"opacity":"1"})
-    // })
-    // $("#visual .agency .item").on("mouseleave",function(){
-    //   $(this).stop().animate({"flex":"0 0 calc(100% / 4)"});
-    //     $(this).find(".txt").stop().animate({"opacity":"0"});
-    // })
-    // 작동안됨!
-  } else if (w <= 768) {
-    // 메뉴bar를 눌렀을때 nav가 오른쪽으로 보이고, 창닫기아이콘을 눌렀을때 nav가 안보이도록함
-    // $("header nav ul li.icon i").on("click", function () {
-    //   $("header nav").hide();
-    // });
-    // $("header .end .box a.menu").on("click", function () {
-    //   $("header nav").show();
-    // });
-    // 작동안됨!
+  
+  if (w <= 1200) {
+    $("header nav ul li.icon i").on("click", function () {
+      $("header nav").hide();
+    });
+    $("header .end .box a.menu").on("click", function () {
+      $("header nav").show();
+    });
 
     $(window).on("scroll", function () {
       // header 스크롤효과
@@ -46,8 +35,10 @@ $(function win() {
     });
   } else {
   }
+ 
   $(window).on("scroll", function () {
     // header 스크롤효과
+
     let sc = $(this).scrollTop();
     if (sc >= 200) {
       $("header .not").css({ opacity: "0" });
@@ -71,7 +62,7 @@ $(function win() {
     } else {
       $("header .logo .scroll").css({ opacity: "0" });
       $("header .not").css({ opacity: "1" });
-      $("header nav").css({ display: "block" });
+
       $("header")
         .stop()
         .animate({ width: "100%", "border-radius": "0", margin: "0" });
@@ -170,25 +161,22 @@ $(function win() {
         $(".con03 .bg-wrap li").eq(i).stop().fadeIn();
       }, 2000);
     });
-
-    // con01 스크롤했을때 홀수번째(even) 이미지는 올라오고, 짝수번째(nth-child(even)) 이미지는 내려가게함
-    // $(function () {
-    //   let page1 = $(".con01").offset().top;
-    //   let page2 = $(".con02").offset().top;
-    //   base = -300;
-
-    //   $(window).on("scroll", function () {
-    //     let scroll = $(window).scrollTop();
-    //     if (scroll >= page1 + base && scroll < page2 + base) {
-    //       $(".con01 ul.bg-wrap li:nth-child(2n)").css({
-    //         transform: "translateY(-5rem)",
-    //       });
-    //     } else {
-    //       $(".con01 ul.bg-wrap li:nth-child(2n)").css({
-    //         transform: "translateY(0)",
-    //       });
-    //     }
-    //   });
-    // });
   });
 });
+
+$(function () {
+  let w = $(window).width();
+  // console.log(w);
+  if(w >= 1200) {
+ $(window).on("scroll", function () {
+   let sc = $(this).scrollTop();
+   if (sc >= 200) {
+
+   }else{
+  $("header nav").css({ display: "block" });
+   }
+ })
+} else {
+}
+});
+ 
